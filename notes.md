@@ -14,3 +14,10 @@
 - Accessing state: ```this.state.<property name>```
 - Passing state: Use props! 
 - Changing state: ```setState()``` [docs](https://reactjs.org/docs/react-component.html#setstate)
+
+### Events
+
+- Similar to HTML events, only difference is camelCase
+- Event handlers are invoked inside ```{}``` i.e. ```onClick={eventHandler}```
+- Event handlers: Using arrow functions will bind this to the component that owns the method
+- 

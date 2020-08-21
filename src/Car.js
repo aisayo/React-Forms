@@ -12,13 +12,13 @@ class Car extends Component {
              cars: [
                  { id: 1, make: "Honda", model: "Accord", year: 2004 },
                  { id: 2, make: "Toyota", model: "Corolla", year: 2007 }
-
              ]
          }
      }
 
      formSubmit = (e, formState) => {
          e.preventDefault()
+         
         const newCar = {
             id: this.state.cars.length + 1,
             make: formState.make,

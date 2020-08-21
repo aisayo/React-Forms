@@ -11,7 +11,6 @@ class CarForm extends Component {
         }
     }
 
-
     makeChange = (e) => {
         this.setState({
             make: e.target.value

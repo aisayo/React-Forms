@@ -9,16 +9,13 @@ class Car extends Component {
          super(props)
 
          this.state = {
-             cars: [
-                 { id: 1, make: "Honda", model: "Accord", year: 2004 },
-                 { id: 2, make: "Toyota", model: "Corolla", year: 2007 }
-             ]
+            cars: []
          }
      }
 
      formSubmit = (e, formState) => {
          e.preventDefault()
-         
+
         const newCar = {
             id: this.state.cars.length + 1,
             make: formState.make,
@@ -33,10 +30,11 @@ class Car extends Component {
      }
 
     render() {
+        
         return (
             <div>
                 <CarForm onSubmit={this.formSubmit} />
-                < CarList cars={this.state.cars} />   
+                { this.state.cars.length === 0 ? <h1>No cars</h1> : < CarList cars={this.state.cars} />}
             </div>
         );
     }

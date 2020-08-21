@@ -8,3 +8,9 @@
 - Functional: used to not be able to handle state(until hooks was introduced), does not need render method, props need to be passed in as argument and accessed via props.propName
 - Class Components: handles state, needs render method, can access props via this.props
 
+### State
+
+- Initialize state: constructor function, setting class property
+- Accessing state: ```this.state.<property name>```
+- Passing state: Use props! 
+- Changing state: ```setState()``` [docs](https://reactjs.org/docs/react-component.html#setstate)

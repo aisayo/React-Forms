@@ -34,7 +34,7 @@ class Car extends Component {
         return (
             <div>
                 <CarForm onSubmit={this.formSubmit} />
-                { this.state.cars.length === 0 ? <h1>No cars</h1> : < CarList cars={this.state.cars} />}
+                { this.state.cars.length === 0 ? <h1>No cars to render</h1> : < CarList cars={this.state.cars} />}
             </div>
         );
     }

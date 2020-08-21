@@ -1,4 +1,4 @@
-# React Forms
+# React Forms :memo:
 
 ## Quick Review
 
@@ -10,7 +10,7 @@
 
 ### State
 
-- Initialize state: constructor function, setting class property[docs](https://medium.com/bb-tutorials-and-thoughts/different-ways-to-initialize-state-in-react-e9ecedf1f9fa)
+- Initialize state: constructor function, setting class property [docs](https://medium.com/bb-tutorials-and-thoughts/different-ways-to-initialize-state-in-react-e9ecedf1f9fa)
 - Accessing state: ```this.state.<property name>```
 - Passing state: Use props! 
 - Changing state: ```setState()``` [docs](https://reactjs.org/docs/react-component.html#setstate)

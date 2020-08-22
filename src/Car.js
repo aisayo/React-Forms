@@ -12,7 +12,7 @@ class Car extends Component {
             cars: []
          }
 
-         this.carFormElement = React.createRef()
+         
      }
 
      formSubmit = (formState, e) => {
@@ -29,7 +29,7 @@ class Car extends Component {
             cars: [...this.state.cars, newCar]
         })
 
-        this.carFormElement.current.clearForm()
+        
 
 
      }
@@ -42,7 +42,7 @@ class Car extends Component {
         
         return (
             <div>
-                <CarForm onSubmit={this.formSubmit} ref={this.carFormElement}/>
+                <CarForm onSubmit={this.formSubmit} />
                 <button onClick={() => this.buttonClick()}>Click</button>
                 { this.state.cars.length === 0 ? <h1>No cars to render</h1> : < CarList cars={this.state.cars} />}
             </div>

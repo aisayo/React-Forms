@@ -20,4 +20,7 @@
 - Similar to HTML events, only difference is camelCase
 - Event handlers are invoked inside ```{}``` i.e. ```onClick={eventHandler}```
 - Event handlers: Using arrow functions will bind this to the component that owns the method
+- Provide an event listener in elements initial render
+- Common pattern: Event handler defined as a method on class
+- Class fields used to bind call backs
 - 

@@ -30,11 +30,19 @@ class CarForm extends Component {
         })
     }
 
+    clearForm = () => {
+        this.setState({
+            make: '',
+            model: '',
+            year: ''
+        })
+    }
+
     render(){
         return (
             <div>
                 
-                <form onSubmit={(e) => this.props.onSubmit(e, this.state)}>
+                <form onSubmit={(e) => this.props.onSubmit(this.state, e)}>
                        <label> Make </label>
                        <input 
                         type='text' 

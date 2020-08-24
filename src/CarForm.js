@@ -30,8 +30,8 @@ class CarForm extends Component {
         })
     }
 
-    submitForm = () => {
-       this.props.onSubmit(this.states)
+    submitForm = (e) => {
+       this.props.onSubmit(this.state, e)
        this.setState({
            make: '',
            model: '',

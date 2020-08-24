@@ -17,7 +17,6 @@ class Car extends Component {
 
      formSubmit = (formState, e) => {
          e.preventDefault()
-        console.log(this)
         const newCar = {
             id: this.state.cars.length + 1,
             make: formState.make,
@@ -28,10 +27,6 @@ class Car extends Component {
         this.setState({
             cars: [...this.state.cars, newCar]
         })
-
-        
-
-
      }
 
      buttonClick(){

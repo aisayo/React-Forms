@@ -28,7 +28,11 @@
 
 ## Forms
 
-
+- [ReactJS Docs - Forms](https://reactjs.org/docs/forms.html)
+- Maintains internal state
+- Controlled components: The component that owns the form, controls what happens in that form on user input
+- ```onChange``` - Event listener added to `input` elements, will be invoked upon users input
+- 
 
 ### Good to know! :brain:
 

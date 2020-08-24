@@ -11,22 +11,33 @@ class CarForm extends Component {
         }
     }
 
-    makeChange = (e) => {
-        this.setState({
-            make: e.target.value
-        })     
-    }
+    // makeChange = (e) => {
+    //     this.setState({
+    //         make: e.target.value
+    //     })     
+    // }
 
-     modelChange = (e) => {
-        this.setState({
-            model: e.target.value
-        })
+    //  modelChange = (e) => {
+    //     this.setState({
+    //         model: e.target.value
+    //     })
          
-    }
+    // }
 
-    yearChange = (e) => {
+    // yearChange = (e) => {
+    //     this.setState({
+    //         year: e.target.value
+    //     })
+    // }
+
+    handleChange = (e) => {
+        const name = e.target.name
+        const value = e.target.value
+        console.log('name', name)
+        console.log('value', value)
+        
         this.setState({
-            year: e.target.value
+            [name]: value
         })
     }
 
@@ -47,8 +58,8 @@ class CarForm extends Component {
                        <label> Make </label>
                        <input 
                         type='text' 
-                        label="make"
-                        onChange={this.makeChange}
+                        name="make"
+                        onChange={this.handleChange} 
                         value={this.state.make}
                         />
     
@@ -58,8 +69,8 @@ class CarForm extends Component {
                        <label> Model </label>
                        <input 
                             type='text'
-                            onChange={this.modelChange} 
-                            label="model"
+                            onChange={this.handleChange} 
+                            name="model"
                             value={this.state.model}
                         />
                     <br />
@@ -68,8 +79,8 @@ class CarForm extends Component {
                        <label> Year </label>
                        <input 
                         type='text' 
-                        onChange={this.yearChange} 
-                        label="year"
+                        onChange={this.handleChange} 
+                        name="year"
                         value={this.state.year}
                         />
                     <br />

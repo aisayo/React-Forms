@@ -26,6 +26,8 @@
 - Common pattern: Event handler defined as a method on class
 - Class fields used to bind call backs/ Arrow functions [Class Fields Article](https://dev.to/ascorbic/class-fields-are-coming-heres-what-that-means-for-react--3a87)
 
+## Forms
+
 
 
 ### Good to know! :brain:

@@ -15,13 +15,13 @@ class Car extends Component {
          
      }
 
-     formSubmit = (formState, e) => {
+     formSubmit = (formData, e) => {
          e.preventDefault()
         const newCar = {
             id: this.state.cars.length + 1,
-            make: formState.make,
-            model: formState.model,
-            year: formState.year
+            make: formData.make,
+            model: formData.model,
+            year: formData.year
         }
 
         this.setState({

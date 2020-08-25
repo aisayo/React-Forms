@@ -15,6 +15,7 @@
 - Accessing state: ```this.state.<property name>```
 - Passing state: Use props! 
 - Changing state: ```setState()``` [docs](https://reactjs.org/docs/react-component.html#setstate)
+- Updating state happens asynchronously
 
 ### Events
 
@@ -28,11 +29,15 @@
 
 ## Forms
 
-- [ReactJS Docs - Forms](https://reactjs.org/docs/forms.html)
 - Maintains internal state
 - Controlled components: The component that owns the form, controls what happens in that form on user input
-- ```onChange``` - Event listener added to `input` elements, will be invoked upon users input
-- 
+- Input values will display corresponding state values
+- `onChange` - Event listener added to `input` elements, will be invoked upon users input. Goal of this event handler is to update state as the user types in the input field
+- [ReactJS Docs - Forms](https://reactjs.org/docs/forms.html)
+- [w3schools React Forms](https://www.w3schools.com/react/react_forms.asp)
+- [Creating React Forms in 2020](https://blog.logrocket.com/forms-in-react-in-2020/)
+-[Complete guide to React forms](https://medium.com/better-programming/the-complete-guide-to-forms-in-react-d2ba93f32825)
+-[React Forms](https://flaviocopes.com/react-forms/)
 
 ### Good to know! :brain:
 
@@ -43,3 +48,5 @@
 - Changing state of a child component from parent component [doc](https://www.freecodecamp.org/news/react-changing-state-of-child-component-from-parent-8ab547436271/)
 - Lifting State Up [doc](https://reactjs.org/docs/lifting-state-up.html)
 - Spread operator [doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+- setState API [doc](https://reactjs.org/docs/react-component.html#setstate)
+- Previous State [doc](https://teamtreehouse.com/library/update-state-based-on-previous-state)
